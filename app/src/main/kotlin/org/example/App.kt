@@ -3,12 +3,14 @@ package org.example
 import java.time.LocalDate
 
 fun main() {
+    //Paso 1
     println("Hola, Kotlin")
     val nombre = "Nazareno"
     val fechadehoy = LocalDate.now()
     println("Mi nombre es $nombre")
     println("Esta es la fecha de hoy $fechadehoy")
 
+    //Paso 2 
     val club: String = "Anzorena"
     val camiseta: Int = 10
     val puntos: Double = 7.6
@@ -18,10 +20,19 @@ fun main() {
     val altura: Double = 16.7
     val area: Double = base * altura
     println("El área es de: $area")
-
-    fun esParOImpar(numero: Int): String {
-    return when {
-        numero % 2 == 0 -> "Par"
-        else -> "Impar"
+    
+    //Paso 3
+    val num1 = -5
+    when {
+        num1 > 0 -> println ("positivo")
+        num1 < 0 -> println ("negativo")
+        else -> println ("cero")
+    }
+    if (num1 > 0) {
+        println ("positivo")
+    } else if (num1 < 0) {
+        println ("negativo")
+    } else {
+        println ("cero")
     }
 }
