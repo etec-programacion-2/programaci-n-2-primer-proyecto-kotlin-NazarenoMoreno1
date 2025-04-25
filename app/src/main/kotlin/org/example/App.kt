@@ -17,6 +17,11 @@ fun main() {
     val base: Double = 8.2
     val altura: Double = 16.7
     val area: Double = base * altura
-    println("Es area es de: $area")
-}
+    println("El área es de: $area")
 
+    fun esParOImpar(numero: Int): String {
+    return when {
+        numero % 2 == 0 -> "Par"
+        else -> "Impar"
+    }
+}
