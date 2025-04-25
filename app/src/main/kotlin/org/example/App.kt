@@ -60,3 +60,17 @@ fun main() {
         a++
     } while (a <= 20)
 }
+//Paso 5
+fun potencia(base: Int, exponente: Int){
+    var resultado = 1
+    for (i in 1..exponente) {
+        resultado *= base
+    }
+    return resultado 
+    }   
+
+fun main() {
+    val base = 2
+    val exponente = 3
+    println("$base^$exponente = ${potencia(base, exponente)}")
+}
