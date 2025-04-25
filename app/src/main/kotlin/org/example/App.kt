@@ -35,4 +35,28 @@ fun main() {
     } else {
         println ("cero")
     }
+
+    //Paso 4
+    var i = 1
+    println("Números pares del 2 al 20 usando for:")
+    for (i in 1..20) {
+        if (i % 2 == 0) {
+            println(i)
+        }
+    }
+    println("Números pares del 2 al 20 usando while:")
+    while (i <= 20) {
+        if (i % 2 == 0) {
+            println(i)
+        }
+        i++
+    }
+    println("Números pares del 2 al 20 usando do while:")
+    var a = 1
+    do {
+        if (a % 2 == 0) {
+            println(a)
+        }
+        a++
+    } while (a <= 20)
 }
